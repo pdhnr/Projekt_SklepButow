@@ -31,7 +31,7 @@
 
 
         //[Required(ErrorMessage = "Wybierz kolor butów")]
-        //public Ekolor Kolor { get; set; }
+        public Ekolor Kolor { get; set; }
 
 
 
@@ -44,6 +44,8 @@
         public int Cena { get; set; }
 
     }
+
+
 
     
     public enum Erodzaj
@@ -62,18 +64,33 @@
         Klapki
     }
 
-    /*
+    
+
+
     public enum Ekolor
     {
-        [Display(Name = "Białe")] Białe,
-        [Display(Name = "Czarne")] Czarne,
-        [Display(Name = "Szare")] Szare,
-        [Display(Name = "Czerwone")] Czerwone,
-        [Display(Name = "Niebieski")] Niebieski,
-        [Display(Name = "Żółty")] Żółty
+        //[Display(Name = "Białe")] Białe,
+        Białe,
+
+        //[Display(Name = "Czarne")] Czarne,
+        Czarne,
+
+        //[Display(Name = "Szare")] Szare,
+        Szare,
+
+        //[Display(Name = "Czerwone")] Czerwone,
+        Czerwone,
+
+        //[Display(Name = "Niebieski")] Niebieski,
+        Niebieski,
+
+        //[Display(Name = "Żółty")] Żółty
+        Żółty
 
     }
-    */
+    
+
+
 
 
 }
