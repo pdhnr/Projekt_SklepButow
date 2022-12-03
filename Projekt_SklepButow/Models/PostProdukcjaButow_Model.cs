@@ -36,7 +36,7 @@
 
 
         //Rozmiar
-
+        //public  Erozmiar Rozmiar {get; set;}
 
 
 
@@ -88,7 +88,7 @@
         Żółty
 
     }
-    
+
 
 
 

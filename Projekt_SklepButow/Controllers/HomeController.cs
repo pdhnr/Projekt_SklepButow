@@ -15,6 +15,7 @@ namespace Projekt_SklepButow.Controllers
 
 
 
+        //Add//
 
         [HttpGet]
         public IActionResult Add() { return View(); }
@@ -34,9 +35,26 @@ namespace Projekt_SklepButow.Controllers
 
             return View("Index", lista);
         }
+        //////////////////////////////////////////////////////////////////////////////////
+
+        //Delet//
+
+        [HttpGet]
+        public IActionResult Delet (int id)
+        {
+
+            context.PostProdukcjaButow_Models.Remove(context.PostProdukcjaButow_Models.Find(id));
+            context.SaveChanges();
+
+            lista = context.PostProdukcjaButow_Models.ToList();
+
+            return View("Index", lista);
+        }
 
 
+        //////////////////////////////////////////////////////////////////////////////////
 
+        //Strona Glowna.
         public IActionResult Index()
         {
             return View(lista);
@@ -52,14 +70,9 @@ namespace Projekt_SklepButow.Controllers
             _logger = logger;
         }
 
-        /*
-        public IActionResult Index()
-        {
-            return View();
-        }
-        */
 
-        public IActionResult Privacy()
+
+        public IActionResult O_nas()
         {
             return View();
         }
